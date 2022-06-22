@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "moghcraft:glittering_lapis_lazuli_block"
+    }
+  ],
+  "result": {
+    "item": "moghcraft:glittering_lapis_lazuli",
+    "count": 9
+  }
+}

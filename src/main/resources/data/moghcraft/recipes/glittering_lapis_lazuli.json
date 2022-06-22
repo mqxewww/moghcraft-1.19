@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "$#$",
+    "#%#",
+    "$#$"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glowstone"
+    },
+    "$": {
+      "item": "minecraft:lapis_block"
+    },
+    "%": {
+      "item": "minecraft:iron_block"
+    }
+  },
+  "result": {
+    "item": "moghcraft:glittering_lapis_lazuli"
+  }
+}

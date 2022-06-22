@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "moghcraft:block/glittering_lapis_lazuli_block"
+  }
+}
