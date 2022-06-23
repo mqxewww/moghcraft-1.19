@@ -8,7 +8,7 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.mqxewww.moghcraft.MoghCraftMod;
-import net.mqxewww.moghcraft.block.custom.GlitteringLapisLazuliBlock;
+import net.mqxewww.moghcraft.block.blocks.GlitteringLapisLazuliBlock;
 
 public class ModBlocks {
     public static final Block GLITTERING_LAPIS_LAZULI_BLOCK = registerBlock(

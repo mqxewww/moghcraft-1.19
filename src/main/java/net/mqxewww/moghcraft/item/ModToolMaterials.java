@@ -8,7 +8,7 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum ModToolMaterials implements ToolMaterial {
-    GLITTERING_LAPIS_LAZULI(4, 3080, 9.0F, 4.0F, 15, () -> {
+    GLITTERING_LAPIS_LAZULI(4, 3080, 1.0F, -1.0F, 15, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ ModItems.GLITTERING_LAPIS_LAZULI });
     });
 

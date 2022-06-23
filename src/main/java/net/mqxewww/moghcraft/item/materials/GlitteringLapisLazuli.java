@@ -1,4 +1,4 @@
-package net.mqxewww.moghcraft.item.custom;
+package net.mqxewww.moghcraft.item.materials;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.Item;

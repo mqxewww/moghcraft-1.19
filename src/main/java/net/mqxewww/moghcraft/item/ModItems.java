@@ -4,8 +4,8 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.mqxewww.moghcraft.MoghCraftMod;
-import net.mqxewww.moghcraft.item.custom.GlitteringLapisLazuli;
-import net.mqxewww.moghcraft.item.custom.LazuliGlintstoneSword;
+import net.mqxewww.moghcraft.item.materials.GlitteringLapisLazuli;
+import net.mqxewww.moghcraft.item.weapons.LazuliGlintstoneSword;
 
 public class ModItems {
     public static final Item GLITTERING_LAPIS_LAZULI = registerItem(

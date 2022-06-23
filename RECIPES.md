@@ -13,8 +13,8 @@
 
 ### Lazuli Glintstone Sword
 
-Attack Speed : 2.2\
-Attack Damage : 12\
+<a href="https://eldenring.wiki.fextralife.com/Lazuli+Glintstone+Sword">Sword details</a>.\
+Obtaining Difficulty : A\
 Effects : Ongoing...
 
 <p align="center">
