@@ -18,7 +18,7 @@ The list of the different recipes added is in the file `RECIPES.md`.
 The weapon statistics from Elden Ring are adapted to Minecraft according to the information below.\
 You can find the Elden Ring weapon stats <a href="https://eldenring.wiki.fextralife.com/Weapons+Comparison+Tables">here</a>.
 
-#### WEIGHT (NOT IMPLEMENTED AT THE MOMENT)
+#### WEIGHT
 
 - 3.5 or fewer gives you Speed I ;
 - 11.5 or more gives you Slowness I ;
