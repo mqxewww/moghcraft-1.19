@@ -16,7 +16,7 @@ public class LazuliGlintstoneSword extends SwordItem {
         super(
             ModToolMaterials.GLITTERING_LAPIS_LAZULI,
             ModWeaponsStats.LAZULI_GLINTSTONE_SWORD.getAttackDamage(),
-            ModWeaponsTypes.STRAIGHT_SWORD.getAttackSpeed(),
+            ModWeaponsStats.LAZULI_GLINTSTONE_SWORD.getAttackSpeed(),
             new FabricItemSettings().group(ItemGroup.COMBAT)
         );
     }

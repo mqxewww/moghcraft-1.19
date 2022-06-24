@@ -5,21 +5,27 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
 public enum ModWeaponsStats {
-    LAZULI_GLINTSTONE_SWORD(79, 94, ModWeaponsObtainingDifficulty.A, 3.5F);
+    LAZULI_GLINTSTONE_SWORD(
+        79, 94, ModWeaponsTypes.STRAIGHT_SWORD, ModWeaponsObtainingDifficulty.A, 3.5F),
+    BLASPHEMOUS_BLADE(
+        121, 78, ModWeaponsTypes.GREAT_SWORD, ModWeaponsObtainingDifficulty.S, 13.5F);
 
     private final int physicalDamage;
     private final int otherDamage;
+    private final ModWeaponsTypes weaponType;
     private final ModWeaponsObtainingDifficulty obtainingDifficulty;
     private final float weight;
 
     private ModWeaponsStats(
         int physicalDamage,
         int otherDamage,
+        ModWeaponsTypes weaponType,
         ModWeaponsObtainingDifficulty obtainingDifficulty,
         float weight
     ) {
         this.physicalDamage = physicalDamage;
         this.otherDamage = otherDamage;
+        this.weaponType = weaponType;
         this.obtainingDifficulty = obtainingDifficulty;
         this.weight = weight;
     }
@@ -32,14 +38,28 @@ public enum ModWeaponsStats {
         return otherDamage;
     }
 
-    public int getObtainingDifficulty() {
-        return obtainingDifficulty.getBonusAttackDamage();
+    public ModWeaponsTypes getWeaponType() {
+        return weaponType;
     }
 
-    public float getWeight() { return weight; }
+    public ModWeaponsObtainingDifficulty getObtainingDifficulty() {
+        return obtainingDifficulty;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
 
     public int getAttackDamage() {
-        return (int) (this.getPhysicalDamage() * 0.10F + this.getOtherDamage() * 0.025 + this.getObtainingDifficulty());
+        return (int) (this.getPhysicalDamage() * 0.10F + this.getOtherDamage() * 0.025 + this.getBonusAttackDamage());
+    }
+
+    public float getAttackSpeed() {
+        return getWeaponType().getAttackSpeed();
+    }
+
+    public int getBonusAttackDamage() {
+        return getObtainingDifficulty().getBonusAttackDamage();
     }
 
     public StatusEffect getStatusEffectOnHold() {
