@@ -10,6 +10,9 @@ import java.util.function.Supplier;
 public enum ModToolMaterials implements ToolMaterial {
     GLITTERING_LAPIS_LAZULI(4, 3080, 1.0F, -1.0F, 15, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{ ModItems.GLITTERING_LAPIS_LAZULI });
+    }),
+    PERFECT_NETHER_STAR(4, 3080, 1.0F, -1.0F, 15, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{ ModItems.PERFECT_NETHER_STAR });
     });
 
     private final int miningLevel;

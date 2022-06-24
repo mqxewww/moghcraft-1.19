@@ -5,6 +5,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.mqxewww.moghcraft.MoghCraftMod;
 import net.mqxewww.moghcraft.item.materials.GlitteringLapisLazuli;
+import net.mqxewww.moghcraft.item.materials.PerfectNetherStar;
+import net.mqxewww.moghcraft.item.weapons.BlasphemousBlade;
 import net.mqxewww.moghcraft.item.weapons.LazuliGlintstoneSword;
 
 public class ModItems {
@@ -12,8 +14,16 @@ public class ModItems {
         "glittering_lapis_lazuli", new GlitteringLapisLazuli()
     );
 
+    public static final Item PERFECT_NETHER_STAR = registerItem(
+        "perfect_nether_star", new PerfectNetherStar()
+    );
+
     public static final Item LAZULI_GLINTSTONE_SWORD = registerItem(
         "lazuli_glintstone_sword", new LazuliGlintstoneSword()
+    );
+
+    public static final Item BLASPHEMOUS_BLADE = registerItem(
+        "blasphemous_blade", new BlasphemousBlade()
     );
 
     public static Item registerItem(String name, Item item) {

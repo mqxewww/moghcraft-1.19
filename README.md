@@ -1,13 +1,13 @@
 # [S11] MOGHCRAFT 1.19
 
 <p align="center">
-   <a href="https://github.com/mqxewww/moghcraft-1.19"><img src="https://img.shields.io/badge/Mod%20version-0.1.1--1.19-green?style=flat-square&logo=minecraft&logoColor=white" alt="Mod Version" /></a>
+   <a href="https://github.com/mqxewww/moghcraft-1.19"><img src="https://img.shields.io/badge/Mod%20version-fabric--0.1.2--1.19-green?style=flat-square&logo=minecraft&logoColor=white" alt="Mod Version" /></a>
    <a href="https://www.java.com"><img src="https://img.shields.io/badge/Java-17-ED8B00?style=flat-square&logo=java&logoColor=white" alt="Java Version" /></a>
 </p>
 
 ## Description
 
-Mod that adds elements inspired by the Elden Ring game universe. Download the latest version in the "Releases" section.
+Fabric mod that adds elements inspired by the Elden Ring game universe. Download the latest version in the "Releases" section.
 
 ## Recipes
 
@@ -21,8 +21,8 @@ You can find the Elden Ring weapon stats <a href="https://eldenring.wiki.fextral
 #### WEIGHT
 
 - 3.5 or fewer gives you Speed I ;
-- 11.5 or more gives you Slowness I ;
-- 18 or more gives you Slowness II.
+- 11.5 or more gives you Slowness II ;
+- 18 or more gives you Slowness III.
 
 #### ATTACK DAMAGE
 
@@ -30,13 +30,10 @@ You can find the Elden Ring weapon stats <a href="https://eldenring.wiki.fextral
 
 | Obtaining difficulty | AD   |
 |----------------------|------|
-| `S`                  | `+6` |
-| `A`                  | `+5` |
-| `B`                  | `+4` |
-| `C`                  | `+3` |
-| `D`                  | `+2` |
-| `E`                  | `+1` |
-| `F`                  | `+0` |
+| `A`                  | `+4` |
+| `B`                  | `+2` |
+| `C`                  | `+1` |
+| `D`                  | `-1` |
 
 #### ATTACK SPEED
 

@@ -6,9 +6,9 @@ import net.minecraft.entity.effect.StatusEffects;
 
 public enum ModWeaponsStats {
     LAZULI_GLINTSTONE_SWORD(
-        79, 94, ModWeaponsTypes.STRAIGHT_SWORD, ModWeaponsObtainingDifficulty.A, 3.5F),
+        79, 94, ModWeaponsTypes.STRAIGHT_SWORD, ModWeaponsObtainingDifficulty.B, 3.5F),
     BLASPHEMOUS_BLADE(
-        121, 78, ModWeaponsTypes.GREAT_SWORD, ModWeaponsObtainingDifficulty.S, 13.5F);
+        121, 78, ModWeaponsTypes.GREAT_SWORD, ModWeaponsObtainingDifficulty.A, 13.5F);
 
     private final int physicalDamage;
     private final int otherDamage;
@@ -70,8 +70,8 @@ public enum ModWeaponsStats {
 
     public StatusEffectInstance getStatusEffectInstanceOnHold() {
         if (getWeight() <= 3.5F) return new StatusEffectInstance(StatusEffects.SPEED, 60);
-        if (getWeight() >= 18.0F) return new StatusEffectInstance(StatusEffects.SLOWNESS, 60, 1);
-        if (getWeight() >= 11.5F) return new StatusEffectInstance(StatusEffects.SLOWNESS, 60);
+        if (getWeight() >= 18.0F) return new StatusEffectInstance(StatusEffects.SLOWNESS, 60, 2);
+        if (getWeight() >= 11.5F) return new StatusEffectInstance(StatusEffects.SLOWNESS, 60, 1);
 
         return null;
     }

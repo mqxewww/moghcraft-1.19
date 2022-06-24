@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "moghcraft:item/perfect_nether_star"
+  }
+}

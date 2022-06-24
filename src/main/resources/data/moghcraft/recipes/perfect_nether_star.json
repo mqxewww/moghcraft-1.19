@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "/#*",
+    "=%+",
+    "(-)"
+  ],
+  "key": {
+    "/": {
+      "item": "minecraft:bone_block"
+    },
+    "#": {
+      "item": "minecraft:wither_skeleton_skull"
+    },
+    "*": {
+      "item": "minecraft:magma_cream"
+    },
+    "=": {
+      "item": "minecraft:warped_stem"
+    },
+    "%": {
+      "item": "minecraft:nether_star"
+    },
+    "+": {
+      "item": "minecraft:crimson_stem"
+    },
+    "(": {
+      "item": "minecraft:glowstone"
+    },
+    "-": {
+      "item": "minecraft:ghast_tear"
+    },
+    ")": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "moghcraft:perfect_nether_star"
+  }
+}

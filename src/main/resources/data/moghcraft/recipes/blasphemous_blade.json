@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "$#$",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_sword"
+    },
+    "$": {
+      "item": "moghcraft:perfect_nether_star"
+    }
+  },
+  "result": {
+    "item": "moghcraft:blasphemous_blade"
+  }
+}

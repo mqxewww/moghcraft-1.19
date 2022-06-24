@@ -1,13 +1,10 @@
 package net.mqxewww.moghcraft.item;
 
 public enum ModWeaponsObtainingDifficulty {
-    S(6),
-    A(5),
-    B(4),
-    C(3),
-    D(2),
-    E(1),
-    F(0);
+    A(4),
+    B(2),
+    C(1),
+    D(-1);
 
     private final int bonusAttackDamage;
 

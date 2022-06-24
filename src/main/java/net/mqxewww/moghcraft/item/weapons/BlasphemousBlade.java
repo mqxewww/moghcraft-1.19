@@ -10,15 +10,14 @@ import net.minecraft.util.Rarity;
 import net.minecraft.world.World;
 import net.mqxewww.moghcraft.item.ModToolMaterials;
 import net.mqxewww.moghcraft.item.ModWeaponsStats;
-import net.mqxewww.moghcraft.item.ModWeaponsTypes;
 
-public class LazuliGlintstoneSword extends SwordItem {
-    public LazuliGlintstoneSword() {
+public class BlasphemousBlade extends SwordItem {
+    public BlasphemousBlade() {
         super(
-            ModToolMaterials.GLITTERING_LAPIS_LAZULI,
-            ModWeaponsStats.LAZULI_GLINTSTONE_SWORD.getAttackDamage(),
-            ModWeaponsStats.LAZULI_GLINTSTONE_SWORD.getAttackSpeed(),
-            new FabricItemSettings().group(ItemGroup.COMBAT).rarity(Rarity.RARE)
+            ModToolMaterials.PERFECT_NETHER_STAR,
+            ModWeaponsStats.BLASPHEMOUS_BLADE.getAttackDamage(),
+            ModWeaponsStats.BLASPHEMOUS_BLADE.getAttackSpeed(),
+            new FabricItemSettings().group(ItemGroup.COMBAT).rarity(Rarity.EPIC)
         );
     }
 
@@ -27,9 +26,9 @@ public class LazuliGlintstoneSword extends SwordItem {
         if (!world.isClient && selected) {
             LivingEntity target = (LivingEntity) entity;
 
-            if (target.hasStatusEffect(ModWeaponsStats.LAZULI_GLINTSTONE_SWORD.getStatusEffectOnHold())) return;
+            if (target.hasStatusEffect(ModWeaponsStats.BLASPHEMOUS_BLADE.getStatusEffectOnHold())) return;
 
-            target.addStatusEffect(ModWeaponsStats.LAZULI_GLINTSTONE_SWORD.getStatusEffectInstanceOnHold());
+            target.addStatusEffect(ModWeaponsStats.BLASPHEMOUS_BLADE.getStatusEffectInstanceOnHold());
         }
     }
 }
