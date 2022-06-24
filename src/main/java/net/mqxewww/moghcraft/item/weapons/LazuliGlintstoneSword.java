@@ -6,7 +6,6 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.SwordItem;
-import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import net.mqxewww.moghcraft.item.ModToolMaterials;
 import net.mqxewww.moghcraft.item.ModWeaponsStats;

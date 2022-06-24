@@ -6,8 +6,6 @@ import net.minecraft.block.Material;
 
 public class GlitteringLapisLazuliBlock extends Block {
     public GlitteringLapisLazuliBlock() {
-        super(
-            FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()
-        );
+        super(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool());
     }
 }

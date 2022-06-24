@@ -5,14 +5,19 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 
 public enum ModWeaponsStats {
-    LAZULI_GLINTSTONE_SWORD(79, 94, 5, 3.5F);
+    LAZULI_GLINTSTONE_SWORD(79, 94, ModWeaponsObtainingDifficulty.A, 3.5F);
 
     private final int physicalDamage;
     private final int otherDamage;
-    private final int obtainingDifficulty;
+    private final ModWeaponsObtainingDifficulty obtainingDifficulty;
     private final float weight;
 
-    private ModWeaponsStats(int physicalDamage, int otherDamage, int obtainingDifficulty, float weight) {
+    private ModWeaponsStats(
+        int physicalDamage,
+        int otherDamage,
+        ModWeaponsObtainingDifficulty obtainingDifficulty,
+        float weight
+    ) {
         this.physicalDamage = physicalDamage;
         this.otherDamage = otherDamage;
         this.obtainingDifficulty = obtainingDifficulty;
@@ -28,7 +33,7 @@ public enum ModWeaponsStats {
     }
 
     public int getObtainingDifficulty() {
-        return obtainingDifficulty;
+        return obtainingDifficulty.getBonusAttackDamage();
     }
 
     public float getWeight() { return weight; }
@@ -38,17 +43,15 @@ public enum ModWeaponsStats {
     }
 
     public StatusEffect getStatusEffectOnHold() {
-        if (getWeight() <= 3.5F) return StatusEffects.SPEED;
-        if (getWeight() >= 11.5F) return StatusEffects.SLOWNESS;
-        if (getWeight() >= 18.0F) return StatusEffects.SLOWNESS;
-
-        return null;
+        return getStatusEffectInstanceOnHold() != null
+            ? getStatusEffectInstanceOnHold().getEffectType()
+            : null;
     }
 
     public StatusEffectInstance getStatusEffectInstanceOnHold() {
         if (getWeight() <= 3.5F) return new StatusEffectInstance(StatusEffects.SPEED, 60);
-        if (getWeight() >= 11.5F && getWeight() < 18.0F) return new StatusEffectInstance(StatusEffects.SLOWNESS, 60);
         if (getWeight() >= 18.0F) return new StatusEffectInstance(StatusEffects.SLOWNESS, 60, 1);
+        if (getWeight() >= 11.5F) return new StatusEffectInstance(StatusEffects.SLOWNESS, 60);
 
         return null;
     }
